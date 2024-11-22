@@ -41,7 +41,7 @@ app.use("/user", user_router);
 app.use("/case", case_router);
 app.use("/lawyer", lawyer_router);
 app.use("/conversation", conversation_router);
-// app.use("/payment", stripe_router); // Add the Stripe router here
+app.use("/payment", stripe_router); // Add the Stripe router here
 
 // Simple API endpoint for testing server
 app.get("/", (req, res) => {
